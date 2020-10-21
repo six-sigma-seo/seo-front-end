@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server",
-    "build": "webpack --mode production",
+    "build": "webpack --config webpack.config.js --mode production",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
@@ -20,6 +20,8 @@
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
     "@babel/runtime": "^7.11.2",
+    "@storybook/addon-actions": "^6.0.26",
+    "@storybook/addon-links": "^6.0.26",
     "@storybook/react": "^6.0.26",
     "babel-loader": "^8.1.0",
     "html-webpack-plugin": "^4.4.1",
