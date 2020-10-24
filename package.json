@@ -23,13 +23,18 @@
     "@storybook/react": "^6.0.26",
     "babel-loader": "^8.1.0",
     "html-webpack-plugin": "^4.4.1",
+    "react-svg-loader": "^3.0.3",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "css-loader": "^5.0.0",
+    "file-loader": "^6.1.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "styled-components": "^5.2.0"
+    "style-loader": "^2.0.0",
+    "styled-components": "^5.2.0",
+    "url-loader": "^4.1.1"
   }
 }
