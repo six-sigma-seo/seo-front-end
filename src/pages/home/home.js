@@ -1,10 +1,8 @@
-import React from 'react'
-import Button from '../../atoms/button/button'
+import React from 'react';
+import Button from '../../atoms/button/button';
+import Hero from '../../atoms/hero/hero';
+function Home() {
+  return <Hero>Template</Hero>;
+}
 
-function Home () {
-    return <Button disabled>Template</Button>;
-  };
-  
-  export default Home;
-
-
+export default Home;
