@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyledHero, StyledImage, StyledInfo } from './styles';
-// import Input from '../../atoms/input/input';
+import Input from '../input/input';
+// import Input from '../input/input';
 
 function Hero(props) {
   return (
@@ -9,7 +10,7 @@ function Hero(props) {
       <StyledInfo>
         <h1>Scrapy Your Proyect</h1>
         <p>Learn how you can improve your personal proyects</p>
-        {/* <Input></Input> */}
+        <Input></Input>
       </StyledInfo>
     </StyledHero>
   );

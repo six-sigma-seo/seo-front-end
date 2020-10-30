@@ -7,12 +7,15 @@ const StyledHero = styled.div`
   height: ${(props) => props.height};
   width: ${(props) => props.width};
   background: transparent;
-  border: 1px solid black;
+  background: #232323;
 `;
 
 const StyledImage = styled.div.attrs((props) => ({
   size: props.size || '1em ',
-}))``;
+}))`
+  background: url(${Electronics}) no-repeat center center;
+  width: 100%;
+`;
 
 const StyledInfo = styled.div.attrs((props) => ({
   size: props.size || '1em ',
@@ -23,17 +26,21 @@ const StyledInfo = styled.div.attrs((props) => ({
   width: 100%;
   font-family: 'Roboto', sans-serif;
   align-items: center;
-  && h1 {
+  -webkit-text-fill-color: white;
+
+  & > h1 {
     width: 75%;
     font-size: 4em;
-    ${'' /* font-size: 60px; */}
     font-weight: 600;
-    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+    ${'' /* -webkit-text-fill-color: white; */}
+    ${'' /* -webkit-text-stroke-width: 1px; */}
+    ${'' /* -webkit-text-stroke-color: black; */}
   }
-  && p {
-    font-size: 1em;
+  & > p {
+    width: 60%;
+    font-size: 1.25em;
+    font-weight: lighter;
+    padding-left: 10%;
   }
 `;
 

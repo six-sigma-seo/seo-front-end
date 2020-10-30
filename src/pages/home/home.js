@@ -1,8 +1,10 @@
 import React from 'react';
 import Button from '../../atoms/button/button';
-import Hero from '../../atoms/hero/hero';
+import Hero from '../../molecules/hero/hero';
+
+
 function Home() {
-  return <Hero>Template</Hero>;
+  return <Hero />;
 }
 
 export default Home;
