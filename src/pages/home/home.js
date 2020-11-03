@@ -1,8 +1,13 @@
 import React from 'react'
-import Button from '../../atoms/button/button'
+//import WaveTwo from '../../atoms/waveTwo/waveTwo'
+// import Button from '../../atoms/button/button'
+import Card from '../../molecules/card/card'
+// import WrappedGrid from './styles'
 
 function Home () {
-    return <Button disabled>Template</Button>;
+    return (
+      <Card>Sematico</Card>
+      )
   };
   
   export default Home;
