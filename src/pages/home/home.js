@@ -1,10 +1,14 @@
-import React from 'react';
-import Button from '../../atoms/button/button';
-import Hero from '../../molecules/hero/hero';
+import React from 'react'
+//import WaveTwo from '../../atoms/waveTwo/waveTwo'
+// import Button from '../../atoms/button/button'
+import Card from '../../molecules/card/card'
+// import WrappedGrid from './styles'
 
+function Home () {
+    return (
+      <Card>Sematico</Card>
+      )
 
-function Home() {
-  return <Hero />;
 }
 
 export default Home;
