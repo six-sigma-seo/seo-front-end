@@ -5,30 +5,28 @@ const StyledInput = styled.input.attrs((props) => ({
 }))`
   display: grid;
   grid-template: 1fr/75px 1fr;
-  width: 518px;
+  width: 100%;
   height: 62px;
-  margin: 2.5% auto;
+  margin: 2.5% auto 0;
   padding: 0 15px 0 75px;
+  place-self: center;
 
   font-family: 'Roboto', sans-serif;
-  font-size: 2em;
+  font-size: 1.25em;
 
+  box-sizing: border-box;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
   border: none;
   border-radius: 25px;
-
-  background: -webkit-linear-gradient(#8352fd, #bba0a0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #a255ff;
 
   :focus {
     border: none;
-    ${'' /* color: red; */}
     outline: none;
   }
   ::placeholder {
     padding-left: 5%;
-    font-size: 0.5em;
     transition: font-size 0.5s;
     outline: none;
   }
@@ -37,7 +35,6 @@ const StyledInput = styled.input.attrs((props) => ({
     css`
       background: rgba(26, 49, 102, 0.5);
       color: #999;
-
       border: none;
       ::placeholder {
         color: #1a2151;

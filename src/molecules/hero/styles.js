@@ -3,18 +3,23 @@ import Electronics from './Electronics.svg';
 
 const StyledHero = styled.div`
   display: grid;
-  grid-template: 1fr/1fr 1fr;
+  grid-template: 1fr/1fr 1.1fr;
+  place-self: center;
   height: ${(props) => props.height};
-  width: ${(props) => props.width};
+  max-width: ${(props) => props.width};
   background: transparent;
-  background: #232323;
+  box-sizing: border-box;
+  margin: 2.5vh auto;
+  @media (max-width: 375px) {
+    grid-template: repeat(2, minmax(auto, 1fr)) / auto;
+  }
 `;
 
-const StyledImage = styled.div.attrs((props) => ({
-  size: props.size || '1em ',
-}))`
-  background: url(${Electronics}) no-repeat center center;
-  width: 100%;
+const StyledImage = styled.img`
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  place-self: center;
 `;
 
 const StyledInfo = styled.div.attrs((props) => ({

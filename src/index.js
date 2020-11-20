@@ -1,6 +1,6 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import Home from './pages/home/home'
-import 'normalize.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-ReactDOM.render(<Home />, document.getElementById('app'))
+import { App } from './App';
+
+ReactDOM.render(<App />, document.getElementById('app'));

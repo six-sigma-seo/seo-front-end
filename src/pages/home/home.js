@@ -1,14 +1,26 @@
-import React from 'react'
-//import WaveTwo from '../../atoms/waveTwo/waveTwo'
-// import Button from '../../atoms/button/button'
-import Card from '../../molecules/card/card'
-// import WrappedGrid from './styles'
+import React from 'react';
+import { Fragment } from 'react';
+import { StyledLayout, StyledWrapper, StyledCardContainer } from './styles';
+import Hero from '../../molecules/hero/hero';
+import Card from '../../molecules/card/card';
 
-function Home () {
-    return (
-      <Card>Sematico</Card>
-      )
+export const Home = (props) => {
+  return (
+    <StyledLayout>
+      <StyledWrapper>
+        <Hero> </Hero>
+        <CardContainer />
+      </StyledWrapper>
+    </StyledLayout>
+  );
+};
 
-}
-
-export default Home;
+export const CardContainer = () => {
+  return (
+    <StyledCardContainer>
+      <Card />
+      <Card />
+      <Card />
+    </StyledCardContainer>
+  );
+};
