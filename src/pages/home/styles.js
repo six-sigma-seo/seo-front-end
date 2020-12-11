@@ -18,11 +18,11 @@ const StyledWrapper = styled.div`
 `;
 
 const StyledCardContainer = styled.div`
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-  box-sizing: border-box;
+  display: inline;
+  & > h2 {
+    color: #FFF;
+    text-align: center;
+  }
 `;
 
 export { StyledLayout, StyledWrapper, StyledCardContainer };

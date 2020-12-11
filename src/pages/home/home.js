@@ -2,7 +2,7 @@ import React from 'react';
 import { Fragment } from 'react';
 import { StyledLayout, StyledWrapper, StyledCardContainer } from './styles';
 import Hero from '../../molecules/hero/hero';
-import Card from '../../molecules/card/card';
+import Carousel from '../../organisms/carousel';
 
 export const Home = (props) => {
   return (
@@ -18,9 +18,7 @@ export const Home = (props) => {
 export const CardContainer = () => {
   return (
     <StyledCardContainer>
-      <Card />
-      <Card />
-      <Card />
+      <Carousel/>
     </StyledCardContainer>
   );
 };
