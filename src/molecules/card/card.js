@@ -1,18 +1,19 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { CardContainer, DescriptionCardContainer } from './styles';
 import FemaleSkater from '../../assets/SVG/femaleSkater';
 
-function card(props) {
+function CardFeature({feature,soon}) {
+
   return (
     <>
-      <CardContainer>
-        <FemaleSkater />
-        <DescriptionCardContainer {...props}>
-          {props.children}
+      <CardContainer soon={soon}>
+        <FemaleSkater/>
+        <DescriptionCardContainer feature={feature}>
+          <p>{feature}</p>
         </DescriptionCardContainer>
       </CardContainer>
     </>
   );
 }
 
-export default card;
+export default CardFeature;
