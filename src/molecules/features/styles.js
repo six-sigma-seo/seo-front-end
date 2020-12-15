@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const Features = styled.div`
   font-family: 'Open Sans', sans-serif;
-  border: red solid 2px;
   padding: 15px;
   display: flex;
   flex-direction: column;
