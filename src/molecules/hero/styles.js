@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import Electronics from './Electronics.svg';
+// import Electronics from './Electronics.svg';
 
 const StyledHero = styled.div`
   display: grid;

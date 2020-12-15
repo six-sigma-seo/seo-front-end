@@ -1,22 +1,35 @@
 import styled, { css } from 'styled-components';
 
-const StyledLayout = styled.div.attrs((props) => ({
-  width: props.iconSize,
-  height: props.iconSize,
-}))`
+const StyledStructurePages = styled.div`
   display: grid;
+  grid-template: 0.25fr 0.25fr 1fr/1fr 3fr;
+  grid-template-areas:
+    '. . menu'
+    'general-data title'
+    'general-data test';
 
-  color: #fff;
-  max-width: ${(props) => props.size || '1rem'};
-  max-height: ${(props) => props.size || '1rem'};
+  min-height: 100vh;
+  min-width: 100vw;
 
-  & > svg {
-    display: block;
-    overflow: visible;
-    width: 100%;
-    height: 100%;
-    fill: #fff;
+  padding: 0 2.5%;
+  margin: 0;
+
+  box-sizing: border-box;
+`;
+
+const StyledTestSection = styled.div`
+  grid-area: test;
+
+  box-sizing: border-box;
+  overflow-y: scroll;
+
+  ::-webkit-scrollbar {
+    width: 30px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
   }
 `;
 
-export { StyledLayout };
+export { StyledStructurePages, StyledTestSection };

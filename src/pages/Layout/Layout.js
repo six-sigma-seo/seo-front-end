@@ -1,18 +1,18 @@
 import React from 'react';
-import { StyledLayout } from './styles';
+import { StyledStructurePages, StyledTestSection } from './styles';
 
-// import Header from '../header/Header';
-// import Footer from '../footer/Footer';
+import { Menu } from '../../molecules/menu/menu';
+import { GlobalStyle } from '../../App';
 
-export default function Layout(props) {
+export const Layout = (props) => {
   return (
     <>
-      <Layout>
-        hola mundo
-        {/* <Header /> */}
-        <div>{props.children}</div>
-        {/* <Footer /> */}
-      </Layout>
+      <GlobalStyle primary />
+      <StyledStructurePages>
+        <div></div>
+        <Menu />
+        <StyledTestSection />
+      </StyledStructurePages>
     </>
   );
-}
+};

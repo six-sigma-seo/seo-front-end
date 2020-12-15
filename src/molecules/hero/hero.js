@@ -2,9 +2,9 @@ import React from 'react';
 import { StyledHero, StyledImage, StyledInfo } from './styles';
 import Input from '../input/input';
 // import Input from '../input/input';
-import Electronics from './Electronics.svg';
+import Electronics from '../../assets/SVG/Electronics.svg';
 
-function Hero(props) {
+export const Hero = (props) => {
   return (
     <StyledHero {...props} height='auto' width='auto'>
       <StyledImage src={Electronics}>
@@ -17,6 +17,4 @@ function Hero(props) {
       </StyledInfo>
     </StyledHero>
   );
-}
-
-export default Hero;
+};
