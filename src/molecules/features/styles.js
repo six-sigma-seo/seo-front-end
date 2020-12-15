@@ -1,8 +1,7 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-const Features = styled.div`
+export const Features = styled.div`
   font-family: 'Open Sans', sans-serif;
-  border: red solid 2px;
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -18,18 +17,14 @@ const Features = styled.div`
   }
 `;
 
-const Graficas = styled.div`
+export const Graficas = styled.div`
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
 
   canvas {
-    padding:  1em;
+    padding: 1em;
   }
 `;
 
-const Text = styled.div`
-
-`;
-
-export { Features, Graficas, Text };
+export const Text = styled.div``;

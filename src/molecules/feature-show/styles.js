@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-const Container = styled.div`
+export const Container = styled.div`
   display: flex;
   font-family: 'Open Sans', sans-serif;
   background: rgba(255, 255, 255, 0.8);
@@ -21,10 +21,8 @@ const Container = styled.div`
 
   .link {
     align-self: flex-end;
-    cursor:pointer;
+    cursor: pointer;
     text-decoration: none;
     color: inherit;
   }
 `;
-
-export { Container };
