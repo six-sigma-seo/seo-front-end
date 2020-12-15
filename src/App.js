@@ -4,6 +4,7 @@ import { createGlobalStyle } from 'styled-components';
 
 import { Layout } from './pages/Layout/Layout';
 import { Home } from './pages/Layout-Home/Home';
+import { Recomendations } from './pages/Layout-recomentation/Recomendations';
 
 import Rectangle from './assets/SVG/rectangle.svg';
 import Stains from './assets/SVG/stains.svg';
@@ -32,9 +33,9 @@ export const App = (props) => {
     <>
       <Normalize />
       <GlobalStyle />
-      <Layout>
+      <Recomendations>
         <div>{props.children}</div>
-      </Layout>
+      </Recomendations>
     </>
   );
 };

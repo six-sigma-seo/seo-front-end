@@ -29,9 +29,11 @@ export const StyledTitle = styled.h1`
 export const StyledTestSection = styled.div`
   grid-area: test;
 
-  box-sizing: border-box;
+  margin-bottom: 2.5vh;
+
   overflow-y: scroll;
-  overflow: hidden;
+  box-sizing: border-box;
+  /* overflow: hidden; */
 
   ::-webkit-scrollbar {
     width: 30px;
