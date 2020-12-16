@@ -27,4 +27,11 @@ export const Graficas = styled.div`
   }
 `;
 
-export const Text = styled.div``;
+export const Text = styled.div`
+`;
+
+export const Lista = styled.ul`
+  text-decoration: none;
+  list-style-type: none;
+`;
+

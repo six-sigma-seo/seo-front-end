@@ -1,5 +1,5 @@
 import React from 'react';
-import { Features, Text } from '../styles';
+import { Features, Lista, Text } from '../styles';
 
 export const Desuso = ({ ...data }) => {
   function listarKeywords() {
@@ -20,7 +20,9 @@ export const Desuso = ({ ...data }) => {
             La etiqueta meta keywords representa una etiqueta en desuso y se
             encuentra {data.qtymeta_keywords} en tu código, de la forma:
           </Text>
-          <ul>{listarKeywords()}</ul>
+          <Lista>
+            {listarKeywords()}
+          </Lista>
         </Graficas>
       ) : (
         <p>Tu página no tiene etiquetas en desuso.</p>
