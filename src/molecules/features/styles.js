@@ -28,7 +28,11 @@ const Graficas = styled.div`
 `;
 
 const Text = styled.div`
-
 `;
 
-export { Features, Graficas, Text };
+const Lista = styled.ul`
+  text-decoration: none;
+  list-style-type: none;
+`;
+
+export { Features, Graficas, Text, Lista };
