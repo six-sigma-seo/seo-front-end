@@ -1,7 +1,7 @@
 import React from 'react';
 import { Features, Text } from '../styles';
 
-function estructura ({data}) {
+export const estructura = ({data}) => {
   return (
     <Features>
       <h2>Estructura Semantica</h2>
@@ -13,5 +13,3 @@ function estructura ({data}) {
     </Features>
   );
 }
-
-export default estructura;

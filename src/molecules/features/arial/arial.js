@@ -1,7 +1,7 @@
 import React from 'react';
 import { Features, Text, Lista } from '../styles';
 
-function arial ({data}) {
+export const arial = ({data}) => {
   function listar(){
     data.buttons_without_arial_tags.forEach( boton => (
     <li>{boton}</li>
@@ -30,5 +30,3 @@ function arial ({data}) {
     </Features>
   );
 }
-
-export default arial;

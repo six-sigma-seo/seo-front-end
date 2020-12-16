@@ -27,12 +27,11 @@ export const Graficas = styled.div`
   }
 `;
 
-const Text = styled.div`
+export const Text = styled.div`
 `;
 
-const Lista = styled.ul`
+export const Lista = styled.ul`
   text-decoration: none;
   list-style-type: none;
 `;
 
-export { Features, Graficas, Text, Lista };

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Features, Text } from '../styles';
 
-function lenguaje ({data}) {
+export const lenguaje = ({data}) => {
   return (
     <Features>
       <h2>Declaración de lenguaje</h2>
@@ -12,5 +12,3 @@ function lenguaje ({data}) {
     </Features>
   );
 }
-
-export default lenguaje;
