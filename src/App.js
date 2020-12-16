@@ -4,9 +4,9 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Normalize } from 'styled-normalize';
 import { createGlobalStyle } from 'styled-components';
 
-import { Layout } from './pages/Layout-Tests/Layout';
+import { Test } from './pages/Layout-Tests/Test';
 import { Home } from './pages/Layout-Home/Home';
-import { Recomendations } from './pages/Layout-recomentation/Recomendations';
+import { Recomendations } from './pages/Layout-Recomendation/Recomendations';
 
 import Rectangle from './assets/SVG/rectangle.svg';
 import Stains from './assets/SVG/stains.svg';
@@ -24,7 +24,8 @@ export const GlobalStyle = createGlobalStyle`
 
     box-sizing: border-box;
     background: no-repeat center center;
-    background: url(${(props) => props.primary ? `${Stains}` : `${Rectangle}`});
+    background: url(${(props) =>
+      props.primary ? `${Stains}` : `${Rectangle}`});
     background-size: cover;
   }
 `;
@@ -32,17 +33,14 @@ export const GlobalStyle = createGlobalStyle`
 export const App = () => {
   return (
     <BrowserRouter>
-    <Normalize />
-    <GlobalStyle />
+      <Normalize />
+      <GlobalStyle />
 
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/tests" component={Layout} />
-        <Route exact path="/recomendations" component={Recomendations} />
-        
+        <Route exact path='/' component={Home} />
+        <Route exact path='/tests' component={Test} />
+        <Route exact path='/recomendations' component={Recomendations} />
       </Switch>
- 
     </BrowserRouter>
-    
   );
 };
