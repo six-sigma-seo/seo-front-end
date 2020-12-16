@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledLayout, StyledTitle, StyledTestSection } from '../Layout/styles';
+import { StyledLayout, StyledTitle, StyledTestSection } from '../Layout-Tests/styles';
 
 import { Menu } from '../../molecules/menu/menu';
 import { GlobalStyle } from '../../App';

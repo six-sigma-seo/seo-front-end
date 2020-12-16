@@ -1,8 +1,10 @@
 import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+
 import { Normalize } from 'styled-normalize';
 import { createGlobalStyle } from 'styled-components';
 
-import { Layout } from './pages/Layout/Layout';
+import { Layout } from './pages/Layout-Tests/Layout';
 import { Home } from './pages/Layout-Home/Home';
 import { Recomendations } from './pages/Layout-recomentation/Recomendations';
 
@@ -28,14 +30,20 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
-export const App = (props) => {
+export const App = () => {
   return (
-    <>
-      <Normalize />
-      <GlobalStyle />
-      <Recomendations>
-        <div>{props.children}</div>
-      </Recomendations>
-    </>
+    <BrowserRouter>
+    <Normalize />
+    <GlobalStyle />
+
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/tests" component={Layout} />
+        <Route exact path="/recomendations" component={Recomendations} />
+        
+      </Switch>
+ 
+    </BrowserRouter>
+    
   );
 };

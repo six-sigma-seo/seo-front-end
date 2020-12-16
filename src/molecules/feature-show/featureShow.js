@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from './styles';
-import { Link, BrowserRouter as Router } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export const FeatureShow = ({ ...feature }) => {
   return (
@@ -15,15 +15,15 @@ export const FeatureShow = ({ ...feature }) => {
         <h2 className='title'>{feature.title}</h2>
         <p className='description'>{feature.description}</p>
       </div>
-      <Router>
+  
         <Link
-          to=''
+          to='/recomendations'
           // {feature.url}
           className='link'
         >
           see more{'>>'}
         </Link>
-      </Router>
+    
     </Container>
   );
 };
