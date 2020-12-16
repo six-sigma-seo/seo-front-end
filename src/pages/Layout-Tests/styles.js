@@ -9,8 +9,8 @@ export const StyledLayout = styled.div`
     'general-data test'
     '. test';
 
-  min-height: 100vh;
-  min-width: 100vw;
+  max-height: 100vh;
+  max-width: 100vw;
 
   padding: 0 2.5%;
   margin: 0;
@@ -29,17 +29,27 @@ export const StyledTitle = styled.h1`
 export const StyledTestSection = styled.div`
   grid-area: test;
 
+  display: grid;
+  grid-template: 1fr/1fr;
+
+  width: 100%;
+  max-height: inherit;
+
   margin-bottom: 2.5vh;
 
   overflow-y: scroll;
+
   box-sizing: border-box;
-  /* overflow: hidden; */
 
   ::-webkit-scrollbar {
-    width: 30px;
+    width: 7.5px;
   }
 
   ::-webkit-scrollbar-track {
-    background: transparent;
+    background-color: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #5943be;
+    border-radius: 5px;
   }
 `;
