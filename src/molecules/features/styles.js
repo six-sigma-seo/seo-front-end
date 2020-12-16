@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-export const Features = styled.div`
+const Features = styled.div`
   font-family: 'Open Sans', sans-serif;
   padding: 15px;
   display: flex;
@@ -17,14 +17,18 @@ export const Features = styled.div`
   }
 `;
 
-export const Graficas = styled.div`
+const Graficas = styled.div`
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
 
   canvas {
-    padding: 1em;
+    padding:  1em;
   }
 `;
 
-export const Text = styled.div``;
+const Text = styled.div`
+
+`;
+
+export { Features, Graficas, Text };

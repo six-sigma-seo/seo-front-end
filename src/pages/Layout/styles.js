@@ -1,13 +1,12 @@
 import styled, { css } from 'styled-components';
 
-export const StyledLayout = styled.div`
+const StyledStructurePages = styled.div`
   display: grid;
-  grid-template: 0.25fr 0.25fr 1fr 0.25fr/1fr 3fr;
+  grid-template: 0.25fr 0.25fr 1fr/1fr 3fr;
   grid-template-areas:
-    '. menu'
+    '. . menu'
     'general-data title'
-    'general-data test'
-    '. test';
+    'general-data test';
 
   min-height: 100vh;
   min-width: 100vw;
@@ -17,23 +16,12 @@ export const StyledLayout = styled.div`
 
   box-sizing: border-box;
 `;
-export const StyledTitle = styled.h1`
-  grid-area: title;
 
-  margin: auto;
-
-  font-family: inherit;
-
-  color: white;
-`;
-export const StyledTestSection = styled.div`
+const StyledTestSection = styled.div`
   grid-area: test;
 
-  margin-bottom: 2.5vh;
-
-  overflow-y: scroll;
   box-sizing: border-box;
-  /* overflow: hidden; */
+  overflow-y: scroll;
 
   ::-webkit-scrollbar {
     width: 30px;
@@ -43,3 +31,5 @@ export const StyledTestSection = styled.div`
     background: transparent;
   }
 `;
+
+export { StyledStructurePages, StyledTestSection };

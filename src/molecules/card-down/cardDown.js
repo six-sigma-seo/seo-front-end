@@ -1,6 +1,14 @@
 import React from 'react';
 import { CardContainer } from './styles';
 
-export const CardDown = (props) => {
-  return <CardContainer>{props.children}</CardContainer>;
-};
+function cardDown (props) {
+  return (
+    <>
+      <CardContainer>
+          {props.children}
+      </CardContainer>
+    </>
+  );
+}
+
+export default cardDown;

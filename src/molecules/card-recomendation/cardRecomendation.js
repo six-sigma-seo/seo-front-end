@@ -1,6 +1,14 @@
 import React from 'react';
 import { CardContainer } from './styles';
 
-export const CardRecomendation = (props) => {
-  return <CardContainer>{props.children}</CardContainer>;
-};
+function cardRecomendation (props) {
+  return (
+    <>
+      <CardContainer>
+          {props.children}
+      </CardContainer>
+    </>
+  );
+}
+
+export default cardRecomendation;

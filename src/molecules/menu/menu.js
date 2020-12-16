@@ -1,23 +1,22 @@
 import React from 'react';
 import { Nav, Wrapper } from './styles';
-import { Link, BrowserRouter as Router } from 'react-router-dom';
 
 export const Menu = (props) => {
   return (
-    <Router>
+    <>
       <Nav>
         <Wrapper>
           <li>
-            <Link to='/'>Scrappy</Link>
+            <a href='/'>Scrappy</a>
           </li>
           <li>
-            <Link to='/'>General Tips</Link>
+            <a href='/'>General Tips</a>
           </li>
           <li>
-            <Link to='/'>About us</Link>
+            <a href='/'>About us</a>
           </li>
         </Wrapper>
       </Nav>
-    </Router>
+    </>
   );
 };
