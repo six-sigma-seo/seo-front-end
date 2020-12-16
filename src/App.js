@@ -24,8 +24,7 @@ export const GlobalStyle = createGlobalStyle`
 
     box-sizing: border-box;
     background: no-repeat center center;
-    background: url(${(props) =>
-      props.primary ? `${Stains}` : `${Rectangle}`});
+    background: url(${(props) => props.primary ? `${Stains}` : `${Rectangle}`});
     background-size: cover;
   }
 `;
@@ -46,4 +45,5 @@ export const App = () => {
     </BrowserRouter>
     
   );
+};
 };
