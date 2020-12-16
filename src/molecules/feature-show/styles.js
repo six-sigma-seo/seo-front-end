@@ -9,8 +9,8 @@ export const Container = styled.div`
   border-radius: 20px;
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(40px);
-  max-width: 640px;
-  min-height: 200px;
+  max-width: inherit;
+  min-height: 150px;
 
   .content {
     flex-grow: 3;

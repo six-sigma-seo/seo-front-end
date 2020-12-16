@@ -11,7 +11,7 @@ import { Jerarquias } from '../../molecules/features/jerarquias/jerarquias';
 import { Meta } from '../../molecules/features/meta/meta';
 import { Titulo } from '../../molecules/features/titulo/titulo';
 
-export const Layout = (props) => {
+export const Test = (props) => {
   return (
     <>
       <GlobalStyle primary />
@@ -21,11 +21,11 @@ export const Layout = (props) => {
         <StyledTitle>Hola Mundo</StyledTitle>
         <CardDown />
         <StyledTestSection>
-          <Meta />
-          <Titulo />
+          {/* <Meta /> */}
+          {/* <Titulo /> */}
           <FeatureShow />
-          <Alternativas />
-          <Jerarquias />
+          {/* <Alternativas /> */}
+          {/* <Jerarquias /> */}
         </StyledTestSection>
       </StyledLayout>
     </>
