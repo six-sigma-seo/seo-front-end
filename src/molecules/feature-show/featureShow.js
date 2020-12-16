@@ -9,7 +9,10 @@ export const FeatureShow = ({ feature }) => {
       <figure className='graph'>
         <img
           alt='Se cumple o no el test'
-          src={feature.boolean ? '../../assets/done.png' : '../../assets/cross.png'}
+          src={feature.boolean ?
+            "https://img.icons8.com/emoji/48/000000/check-mark-emoji.png"
+            : "https://img.icons8.com/emoji/48/000000/cross-mark-emoji.png"
+          }
         />
       </figure>
       <div className='content'>
