@@ -1,18 +1,17 @@
 import styled from 'styled-components';
 
-const CarouselContainer = styled.section`
+export const CarouselContainer = styled.section`
   display: flex;
-  /* width: 50vw; */
+  max-width: inherit;
   padding: 5px;
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow-x: scroll;
+  /* overflow-y: hidden; */
+
   margin: 0 auto;
   &::-webkit-scrollbar {
-    height: 5px;
+    height: 10px;
   }
   &::-webkit-scrollbar-thumb {
     background-color: #5943be;
   }
 `;
-
-export { CarouselContainer };

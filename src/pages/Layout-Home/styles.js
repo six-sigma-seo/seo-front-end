@@ -23,6 +23,18 @@ export const StyledWrapper = styled.div`
 export const StyledCardContainer = styled.div`
   /* display: flex; */
   display: inline;
+
+  max-width: inherit;
+  max-height: inherit;
+
+  box-sizing: border-box;
+
+  overflow-x: scroll;
+  /* transform: rotate(-90deg); */
+
+  &::-webkit-scrollbar {
+    height: 5px;
+  }
   & > h2 {
     color: #fff;
     text-align: center;

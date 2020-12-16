@@ -12,9 +12,7 @@ export const Home = (props) => {
       <StyledWrapper>
         <Menu />
         <Hero />
-        <Link to="/tests">
-          <CardContainer />
-        </Link>
+        <CardContainer />
       </StyledWrapper>
     </StyledLayout>
   );
