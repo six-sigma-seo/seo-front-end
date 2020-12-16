@@ -1,18 +1,17 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-const CardContainer = styled.div`
-  
-  font-family: 'Open Sans', sans-serif;
-  position: relative;
-  background: rgba(255, 255, 255, 0.8);
-  margin: 5px;
+export const CardContainer = styled.div`
+  grid-area: general-data;
+
+  font-family: inherit;
+
+  max-width: inherit;
+  max-height: inherit;
+  margin-right: 2.5vw;
   padding: 15px;
-  max-width: 240px;
+
+  background: rgba(255, 255, 255, 0.75);
   border-radius: 20px;
-  height: 500px;
-  text-align: center;
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(40px);
 `;
-
-export { CardContainer };

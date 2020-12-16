@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { StyledLayout, StyledWrapper, StyledCardContainer } from './styles';
 
 import { Menu } from '../../molecules/menu/menu';
@@ -11,7 +12,9 @@ export const Home = (props) => {
       <StyledWrapper>
         <Menu />
         <Hero />
-        <CardContainer />
+        <Link to="/tests">
+          <CardContainer />
+        </Link>
       </StyledWrapper>
     </StyledLayout>
   );
